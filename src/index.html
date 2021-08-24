@@ -10,22 +10,46 @@
       integrity="sha512-ISS7cAi1PEhQ8jnbJpJZMd29NlhNj4AWYyLOSp2CE/CsHxTCu+r+t0D2yoJudVrd0/8fTVPUVDzY5Tvli75u/g=="
       crossorigin="anonymous"
     />
+    <link rel="stylesheet" href="./styles.css" />
   </head>
   <body>
-    <!-- Так добавляются фрагменты в главные HTML-файлы страниц. -->
-    <include src="./partials/example.html"></include>
+    <div class="tabs" id="tabs-1">
+      <div class="controls" data-controls>
+        <a href="#apple" class="controls__item">🍎 Apple</a>
+        <a href="#grapes" class="controls__item">🍇 Grapes</a>
+        <a href="#peach" class="controls__item">🍑 Peach</a>
+      </div>
 
-	<div>
-		🍎
-	</div>
-	<div>
-		🍇
-	</div>
-	<div>
-		🍑
-	</div>
+      <div class="panes" data-panes>
+        <div class="pane" id="apple">
+          <h2 class="pane__fruit">🍎</h2>
+          <p class="pane__text">
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Alias quo
+            est qui sapiente odit in fugiat animi assumenda consequuntur, sit,
+            molestiae iure sunt natus quis eum modi quae excepturi aperiam.
+          </p>
+        </div>
 
-    <!-- Скрипт идёт последним в разметке. В нём уже подключен главный SASS-файл. -->
+        <div class="pane" id="grapes">
+          <h2 class="pane__fruit">🍇</h2>
+          <p class="pane__text">
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Alias quo
+            est qui sapiente odit in fugiat animi assumenda consequuntur, sit,
+            molestiae iure sunt natus quis eum modi quae excepturi aperiam.
+          </p>
+        </div>
+
+        <div class="pane" id="peach">
+          <h2 class="pane__fruit">🍑</h2>
+          <p class="pane__text">
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Alias quo
+            est qui sapiente odit in fugiat animi assumenda consequuntur, sit,
+            molestiae iure sunt natus quis eum modi quae excepturi aperiam.
+          </p>
+        </div>
+      </div>
+    </div>
+
     <script src="./index.js"></script>
   </body>
 </html>
